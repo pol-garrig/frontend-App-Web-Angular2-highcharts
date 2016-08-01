@@ -1,0 +1,127 @@
+/*stylesheet*/
+
+.myChartsColumn {
+  margin-top: 50px;
+}
+
+@media (min-width: 1500px) {
+
+  #CouponFare {
+    margin-left: 40px;
+  }
+
+  #cabin {
+    margin-left: 225px;
+  }
+}
+
+@media (max-width: 1675px) {
+  #cabin {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 1500px) {
+  #cabin {
+    margin-left: 175px;
+  }
+}
+
+@media (max-width: 1320px) {
+  #cabin {
+    margin-left: 125px;
+  }
+}
+
+@media (min-width: 1250px) {
+  #actualCouponFare {
+    font-size: 3em;
+    color: #005EB8;
+  }
+
+  .actualCouponFarePercent {
+    font-size: 2em;
+    color: #F93F17;
+  }
+
+  .actualCouponFarePercent.positive {
+    color: green;
+  }
+
+  .myChartsLine {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+
+  #CouponFare {
+    margin-left: 40px;
+  }
+}
+
+@media (max-width: 1250px) {
+  #actualCouponFare {
+    font-size: 2em;
+    color: #005EB8;
+  }
+
+  .actualCouponFarePercent {
+    font-size: 2em;
+    color: #F93F17;
+  }
+
+  .actualCouponFarePercent.positive {
+    color: green;
+  }
+
+  .myChartsLine {
+    margin-top: 20px;
+  }
+
+  #CouponFare {
+    margin-left: 0px;
+  }
+
+  #cabin {
+    margin-left: 20px;
+  }
+}
+
+@media (min-width: 1504px) {
+  #actualCouponFare {
+    font-size: 4em;
+    color: #005EB8;
+  }
+
+  .actualCouponFarePercent {
+    font-size: 2em;
+    color: #F93F17;
+  }
+
+  .actualCouponFarePercent.positive {
+    color: green;
+  }
+
+  .myChartsLine {
+    margin-top: 20px;
+    margin-left: 40px;
+  }
+}
+
+#CouponFare {
+  margin-top: 20px;
+  border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  border: 1px solid #c7c9c7;
+
+  -webkit-box-shadow: 2px 5px 8px -7px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 2px 5px 8px -7px rgba(0, 0, 0, 0.59);
+  box-shadow: 2px 5px 8px -7px rgba(0, 0, 0, 0.59);
+  padding: 20px;
+  /*height: 330px;*/
+}
+
+.myTitle {
+  font-weight: bold;
+}
+

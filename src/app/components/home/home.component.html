@@ -1,0 +1,34 @@
+<div class="col-sm-3 col-md-2 " id="sidebar" role="navigation">
+    <side-bar (kpi)="updateKpi($event)"></side-bar>
+</div>
+<div class="col-sm-8 col-md-10 main">
+    <nav class="navbar navbar-light bg-faded ">
+        <a class="navbar-brand" href="#">Filters : </a>
+        <ul class="nav navbar-nav ">
+            <a class="navbar-brand" id="noSelections" *ngIf="!globalsFilters.length  > 0">No selections applied</a>
+            <li *ngFor="let filter of globalsFilters; let i = index">
+                <a (click)="removeFilter(i, filter)">{{filter}}
+                    <span class="g glyphicon glyphicon-remove-circle"></span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="myChartsLine">
+        <compare-cy-py [drilldrown]="drilldrown3" (newFilter)="updateFilters($event)" [kpi]="kpi"
+                       [filters]="globalsFilters"></compare-cy-py>
+    </div>
+
+    <div class="col-sm-4 col-md-7 myChartsLine">
+        <chart-line [drilldrown]="drilldrown3" (newFilter)="updateFilters($event)" [kpi]="kpi"
+                    [filters]="globalsFilters"></chart-line>
+    </div>
+    <div class="col-sm-4 col-md-5 main myChartsColumn">
+        <bar-chart [drilldrown]="drilldrown1" (newFilter)="updateFilters($event)" [kpi]="kpi"
+                   [filters]="globalsFilters" [name]="nameChartBar1"></bar-chart>
+    </div>
+    <div class="col-sm-4 col-md-5 main  myChartsColumn ChartsColumn2">
+        <bar-chart [drilldrown]="drilldrown2" (newFilter)="updateFilters($event)" [kpi]="kpi"
+                   [filters]="globalsFilters" [name]="nameChartBar1"></bar-chart>
+    </div>
+</div>
+

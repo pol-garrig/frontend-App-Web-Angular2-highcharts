@@ -1,0 +1,51 @@
+@import '../../../styles/variables';
+
+#myNav {
+  background-color: $blueAmadeus;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.kpy {
+  border: #c7c9c7 solid 1px !important;
+  font-weight: bold;
+  color: #000;
+}
+
+@media all and (min-width: 1630px) {
+
+  #FowarRevenueReport {
+    font-size: 20px;
+    color: #8a8988;
+    margin: 10px;
+  }
+}
+
+@media all and (max-width: 1629px) and (min-width: 1380px) {
+  #FowarRevenueReport {
+    font-size: 18px;
+    color: #8a8988;
+  }
+}
+
+@media all and (max-width: 1379px) and (min-width: 800px) {
+  #FowarRevenueReport {
+    font-size: 15px;
+    color: #8a8988;
+  }
+}
+
+@media all and (max-width: 799px) and (min-width: 750px) {
+  #FowarRevenueReport {
+    font-size: 14px;
+    color: #8a8988;
+  }
+}
+
+@media all and (max-width: 749px) {
+  #FowarRevenueReport {
+    font-size: 20px;
+    color: #8a8988;
+    margin: 10px;
+  }
+}

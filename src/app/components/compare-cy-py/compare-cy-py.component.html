@@ -1,0 +1,14 @@
+<div class="col-sm-3 col-md-3" id="CouponFare">
+    <h4 class="myTitle">{{kpi}}</h4>
+    <span>2016 vs. 2015</span>
+    <div>
+        <span id="actualCouponFare">{{currentYear | number:'.0-2'}}
+            <span *ngIf="kpi == '$prorated_fare_amount'">€</span>
+        </span>
+        <span>Actual</span>
+    </div>
+    <div>
+        <span [class.positive]="pastYear > 0" class="actualCouponFarePercent">{{pastYear  | number:'.1-2'}} %</span>
+        <span>vs. PY</span>
+    </div>
+</div>

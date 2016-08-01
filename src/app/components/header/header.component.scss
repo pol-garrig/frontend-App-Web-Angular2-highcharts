@@ -1,0 +1,29 @@
+@import '../../../styles/variables';
+
+#myHeader {
+  background-color: $blueAmadeus;
+  min-height: 35px;
+}
+
+#myTitle {
+  display: inline;
+  padding-left: 126px;
+  color: white;
+}
+
+@media (max-width: 500px) {
+  #myTitle {
+    padding-left: 45px;
+  }
+}
+
+#logoAmadeus {
+  padding-left: 20px;
+  margin-top: -6px;
+}
+
+.navbar {
+  /*padding-top: 4px !important;
+  padding-bottom: 0 !important;*/
+  height: 28px;
+}
