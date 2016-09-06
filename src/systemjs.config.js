@@ -8,7 +8,7 @@
         'app': 'app', // 'dist',
         '@angular': 'node_modules/@angular',
         'rxjs': 'node_modules/rxjs',
-        'angular2-in-memory-web-api': 'https://npmcdn.com/angular2-in-memory-web-api', // get latest,
+        'angular2-in-memory-web-api': 'https://unpkg.com/angular2-in-memory-web-api', // get latest,
         'angular2-highcharts': 'https://cdn.rawgit.com/gevgeny/angular2-highcharts/0.1.0/dist',
         'highcharts/highstock.src': 'https://cdn.rawgit.com/highcharts/highcharts-dist/v4.2.1/highstock.js'
 
